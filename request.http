@@ -1,0 +1,22 @@
+### GET ALL TRADES
+GET http://localhost:8000/trades
+
+
+### CREATE TRADE
+POST http://localhost:8000/trades
+Content-Type: application/json
+
+{
+"type": "buy",
+"user_id": 23,
+"symbol": "ABX",
+"shares": 30,
+"price": 134,
+"timestamp": "1591522701000",
+"id": 2
+}
+
+### GET A TRADE
+
+GET http://localhost:8000/trades/2
+
